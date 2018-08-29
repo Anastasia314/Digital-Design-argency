@@ -32,13 +32,19 @@
 
 .first_screen {
     position: relative;
+    overflow: hidden;
 }
 
 .video {
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.video video {
+    width: 100%;
 }
 
 .background {
@@ -52,11 +58,14 @@
 }
 
 header {
-    position: relative;
+    position: absolute;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 38px 0;
+    align-items: center;
+    z-index: 20;
 }
 
 nav a {
@@ -71,4 +80,170 @@ nav a + a {
 
 .logo {
     margin: 0 120px;
+}
+
+.h1 {
+    position: relative;
+    text-align: center;
+    padding: 200px 0 150px;
+    z-index: 10;
+}
+
+h1 {
+    font-size: 38px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.under_h1 {
+    color: rgb(238, 238, 238);
+    line-height: 1.556;
+    font-size: 18px;
+    letter-spacing: .3px;
+    width: 609px;
+    margin: auto;
+}
+
+.icons {
+    padding: 100px 0 40px;
+}
+
+.icons_header {
+    font-size: 12px;
+    color: rgb( 25, 25, 25);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.icons_text {
+    font-size: 16px;
+    color: rgb( 120, 120, 120);
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.icons svg {
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin: auto;
+    margin-bottom: 26px;
+    fill: #656565;
+}
+
+.portfolio {
+    margin: 0 -15px;
+    background-color: #8CC5D6;
+}
+
+.portfolio_item {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.portfolio_header {
+    font-size: 24px;
+    color: rgb( 255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 14px;
+    transform: translateX(-100vw);
+    transition: .3s;
+
+}
+
+.portfolio_category {
+    font-size: 12px;
+    color: rgb( 255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    transform: translateX(100vw);
+    transition: .3s;
+}
+
+a:hover .portfolio_hover {
+    background-color: rgba(20, 20, 20, .85);
+}
+
+a:hover .portfolio_category {
+    transform: translateX(0);
+
+}
+
+a:hover .portfolio_header {
+    transform: translateX(0);
+}
+
+.portfolio_item img {
+    width: 100%;
+}
+.call{
+    padding: 100px 0;
+}
+.call_header{
+  font-size: 30px;
+  color: rgb( 29, 29, 29 );
+  font-weight: bold;
+  text-align: center;
+}
+.call_text {
+  font-size: 16px;
+  color: rgb( 120, 120, 120 );
+  text-align: center;
+    margin-bottom: 39px;
+}
+.button{
+  font-size: 12px;
+  color: rgb( 255, 255, 255 );
+  text-transform: uppercase;
+  text-align: center;
+    background-color: #10c9c3;
+    padding: 22px 35px;
+    margin: auto;
+    display: inline-block;
+}
+.button_link {
+    text-align: center;
+}
+.review{
+  background-color: rgb( 16, 201, 195 );
+    padding: 150px 0;
+}
+.review_text{
+    font-size: 30px;
+    color:rgb(255,255,255);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.review_autor{
+    font-size: 12px;
+    color:rgb(255,255,255);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.clients {
+    padding: 100px 0;
+}
+.clients img {
+    max-width: 100%;
+    margin: auto;
+    display: block;
 }
