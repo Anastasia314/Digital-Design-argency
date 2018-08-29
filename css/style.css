@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Bold.eot');
+    src: url('../fonts/Rubik-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Rubik-Bold.woff2') format('woff2'),
+    url('../fonts/Rubik-Bold.woff') format('woff'),
+    url('../fonts/Rubik-Bold.ttf') format('truetype'),
+    url('../fonts/Rubik-Bold.svg#Rubik-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Regular.eot');
+    src: url('../fonts/Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Rubik-Regular.woff2') format('woff2'),
+    url('Rubik-Regular.woff') format('woff'),
+    url('../fonts/Rubik-Regular.ttf') format('truetype'),
+    url('../fonts/Rubik-Regular.svg#Rubik-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+* {
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.first_screen {
+    position: relative;
+}
+
+.video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #141414;
+    opacity: .6;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 38px 0;
+}
+
+nav a {
+    color: #ccc;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+nav a + a {
+    margin-left: 32px;
+}
+
+.logo {
+    margin: 0 120px;
+}
