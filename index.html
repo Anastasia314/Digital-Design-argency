@@ -235,6 +235,65 @@
             </div>
         </div>
     </div>
+    <div class="contacts" id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <div class="contacts_header">Контакты</div>
+                    <div class="contacts_text">
+                        <p><b>Директор: </b>Кавзович Анастасия</p>
+                        <p><b>Адрес:</b> Минск, Леонида Беды, 4, оф.10</p>
+                        <p><b>Телефон:</b> +7 945 254 28 93</p>
+                        <p><b>Email:</b> agency@gmail.com</p>
+                        <p><b>Факс:</b> +7 945 254 28 94</p>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <form action="mail.php" method="post" class="contacts_form">
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" name="Name" placeholder="Ваше имя*" required>
+                            </div>
+                            <div class="col-6">
+                                <input type="email" name="Email" placeholder="Ваш email*" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="tel" name="tel" placeholder="Ваш телефон">
+                            </div>
+                            <div class="col-12"><textarea name="Message" id="" placeholder="Сообщение"></textarea></div>
+                            <div class="col-12"><label> <input type="checkbox" name="check" required>Согласен на обработку персональных данных</label></div>
+                            <div class="col-12"><input type="submit" class="button" value="Отправить"></div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A41680eacccca5a8beec2faeac80044b887b8b23f8c1b20a4900281358c315537&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer_wrap">
+                <div class="footer_col">
+                    <p><b class="footer_name">Агкнство дизайна</b></p>
+                    <p>© 2018 Все права защищены</p>
+                </div>
+                <div class="footer_col">
+                    <p>hello@pirolltheme.com <br> +44 987 065 908 </p>
+                </div>
+                <div class="footer_col social">
+                    <a href="#">Вконтакте</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

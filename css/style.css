@@ -193,57 +193,150 @@ a:hover .portfolio_header {
 .portfolio_item img {
     width: 100%;
 }
-.call{
+
+.call {
     padding: 100px 0;
 }
-.call_header{
-  font-size: 30px;
-  color: rgb( 29, 29, 29 );
-  font-weight: bold;
-  text-align: center;
+
+.call_header {
+    font-size: 30px;
+    color: rgb( 29, 29, 29);
+    font-weight: bold;
+    text-align: center;
 }
+
 .call_text {
-  font-size: 16px;
-  color: rgb( 120, 120, 120 );
-  text-align: center;
+    font-size: 16px;
+    color: rgb( 120, 120, 120);
+    text-align: center;
     margin-bottom: 39px;
 }
-.button{
-  font-size: 12px;
-  color: rgb( 255, 255, 255 );
-  text-transform: uppercase;
-  text-align: center;
+
+.button {
+    font-size: 12px;
+    color: rgb( 255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
     background-color: #10c9c3;
     padding: 22px 35px;
     margin: auto;
     display: inline-block;
 }
+
 .button_link {
     text-align: center;
 }
-.review{
-  background-color: rgb( 16, 201, 195 );
+
+.review {
+    background-color: rgb( 16, 201, 195);
     padding: 150px 0;
 }
-.review_text{
+
+.review_text {
     font-size: 30px;
-    color:rgb(255,255,255);
+    color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: center;
     margin-bottom: 32px;
 }
-.review_autor{
+
+.review_autor {
     font-size: 12px;
-    color:rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
 }
+
 .clients {
     padding: 100px 0;
 }
+
 .clients img {
     max-width: 100%;
     margin: auto;
     display: block;
+}
+
+.contacts_header {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 57px;
+    color: rgb(23, 23, 23);
+}
+
+.contacts_form input,
+.contacts_form textarea {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(234, 234, 234);
+    transition: .3s;
+}
+
+.contacts_form input:focus,
+.contacts_form textarea:focus {
+    outline: none;
+    border-color: #10c9c3;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+}
+
+.contacts_form input::placeholder,
+.contacts_form textarea::placeholder {
+    color: rgb(120, 120, 120);
+}
+
+.contacts_form input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+.contacts_form label {
+    font-size: 15px;
+    color: rgb(120, 120, 120);
+}
+
+.contacts_form input[type="submit"] {
+    width: 180px;
+}
+
+.contacts {
+    margin-bottom: 100px;
+}
+
+.contacts textarea {
+    height: 125px;
+}
+
+footer {
+    background: #141414;
+    color: #bcbcbc;
+    padding: 100px 0;
+}
+
+footer a {
+    color: #bcbcbc;
+    display: block;
+}
+
+.footer_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_name {
+    color: #fff;
+}
+
+a {
+    transition: .3s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .3);
 }
